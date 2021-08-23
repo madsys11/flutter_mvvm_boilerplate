@@ -14,6 +14,7 @@ This project is a sample for flutter MVVM pattern.
 - The [get_it](https://pub.dev/packages/get_it) plugin was used with the [provider](https://pub.dev/packages/provider) pattern base.
 - The dependency between VEIW and VEIWMODEL is `N:1` relationship.
 - Contains login samples using REST API for state management.
+  ![Simulator Screen Shot - iPhone 12 Pro Max](https://user-images.githubusercontent.com/26052559/130416463-edba661d-8136-4ac0-a38d-9ca00bd75b23.png)
 
 <br>
 
