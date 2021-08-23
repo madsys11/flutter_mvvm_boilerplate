@@ -10,7 +10,7 @@ import 'package:flutter_mvvm_boilerplate/app/routes.dart';
 import 'package:flutter_mvvm_boilerplate/app/util/dev_http.dart';
 import 'package:flutter_mvvm_boilerplate/provider/login_provider.dart';
 import 'package:flutter_mvvm_boilerplate/provider/user_provider.dart';
-import 'package:flutter_mvvm_boilerplate/ui/splash_screen/splash_screen.dart';
+import 'package:flutter_mvvm_boilerplate/ui/splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
