@@ -29,4 +29,15 @@ This project is a sample for flutter MVVM pattern.
     git clone https://github.com/madsys11/flutter_mvvm_boilerplate.git
 ```
   2. Rename folder `flutter_mvm_boilerplate` to your project name.
-  3. You can use the [rename](https://pub.dev/packages/rename) plugin to change AppName.
+  3. You can use the [rename](https://pub.dev/packages/rename) plugin to change projectName and packageName.  
+```sh
+    flutter pub global activate rename
+    flutter pub global run rename --appname "projectName"
+    flutter pub global run rename --bundleId com.xxx.packageName
+```
+  4. Open the project. (e.g., vscode)
+  5. Use the `command+shift+h`(on mac) command to replace all `flutter_mvvm_boilerplate` to `projectName`.
+  6. Get packages in a Flutter project.
+```sh
+    flutter pub get
+```
