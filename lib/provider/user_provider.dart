@@ -17,7 +17,7 @@ class UserProvider with ChangeNotifier {
   Future<String?> fetchUser(String id, String token) async {
     // Test Code
     if (kDebugMode) {
-      _user = User(id: 'id123', name: 'name123');
+      _user = User(id: id, name: 'test');
       return null;
     }
 
