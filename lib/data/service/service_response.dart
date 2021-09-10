@@ -12,7 +12,7 @@ import 'package:http/http.dart' as http;
 class ServiceResponse {
   static timeout() {
     print('timeout');
-    Fluttertoast.showToast(msg: 'Unable to contact the server.');
+    Fluttertoast.showToast(msg: 'Unable to connect to the server.');
   }
 
   static handleError(ResponseError responseError,
@@ -29,26 +29,11 @@ class ServiceResponse {
   }
 
   static bool success(dynamic response) {
-    String? responseCode = code(response);
-    return responseCode != null && responseCode == ResponseCode.Success;
-  }
-
-  static String? code(dynamic response) {
-    if (response == null) throw FetchDataException('data is null.');
-
-    return response['code'];
-  }
-
-  static String? message(dynamic response) {
-    if (response == null) throw FetchDataException('data is null.');
-
-    return response['msg'];
+    return response['success'] ?? false;
   }
 
   static dynamic data(dynamic response) {
-    if (response == null) throw FetchDataException('data is null.');
-
-    return response['DS_OUT'];
+    return response['data'] ?? null;
   }
 
   static dynamic toJson(http.Response response) {
